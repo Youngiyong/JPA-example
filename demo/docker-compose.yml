@@ -1,0 +1,13 @@
+
+version: "3"
+services:
+  database:
+    image: mariadb
+    container_name : mariadb
+    ports:
+      - 3306:3306
+    environment:
+      TZ: Asia/Seoul
+      MYSQL_ROOT_PASSWORD: qwe123!@#
+      MYSQL_DATABASE : test
+    restart: always
